@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript" src='jquery-3.1.1.js'></script>
+	<style type="text/css" media="screen">
+	body{
+		background-color: red;
+	}
+	
+		.me{
+			position: relative;
+			width: 100px;
+			height: 100px;
+			left: 300px;	
+			background-color: red;
+			/* line-height: 100px; */
+			display: inline-block;
+		}
+		.arrow{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+		}
+		.top,.mid,.bot{
+			position: absolute;
+			/* width: 33px;
+			height: 33px;
+			color: red; */
+			padding: 0;
+			margin: 0;
+			left: -56px;
+			width:0;
+            height:0;
+            font-size:0;
+            border:solid 10px;
+            border-color:#4D4948 #4D4948 #4D4948 #F8C301;
+		}
+		.top{
+			top: -85px;
+		}
+		.mid{
+			top: -65px;
+			border-color:#4D4948 #4D4948 #4D4948 transparent;
+		}
+		.bot{
+			top: -45px;
+		}
+		img{
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+		}
+	</style>
+	<script type="text/javascript">
+		// $(document).ready(function(){
+		// 	$('div').before().css({
+				
+		// 		'width':0,
+  //                   'height':0,
+  //                   'font-size':0,
+               
+  //                   'border':'12px solid blue'
+		// 	})
+
+		// })
+	</script>
+</head>
+<body>
+	<span>
+
+		<div class="me">
+			<img src="images/girl.jpg" alt="">
+			<div class="arrow">
+				<div class="top">1</div>
+				<div class="mid">2</div>
+				<div class="bot">3</div>
+			</div>
+		</div>
+	</span>
+</body>
+</html>

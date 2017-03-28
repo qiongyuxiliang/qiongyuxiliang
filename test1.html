@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>微信会话小三角</title>
+<meta charset="utf-8">
+<style type="text/css">
+body {
+font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+height: 100%;
+-webkit-background-size: cover;
+background-size: cover;
+-webkit-font-smoothing: antialiased;
+line-height: 1.6;
+}
+::-webkit-scrollbar-track {
+background-color: transparent;
+}
+.bubble.right:before, .bubble.right:after {
+left: 100%;
+}
+.bubble.left:before, .bubble.left:after {
+left: 100%;
+}
+/* 1. 描绘出位置和形状;*/
+.bubble:before, .bubble:after {
+position: absolute;
+top: 14px;
+border: 6px solid transparent;
+content: " ";
+}
+/* 2.border-left:color,width设置; */
+.bubble.bubble_primary.right:after {
+border-left-color: #b2e281;
+border-left-width: 4px;
+}
+/*3。div背景颜色*/
+.bubble.bubble_primary.right {
+background-color: #b2e281;
+margin-bottom: 20px;
+}
+.bubble.bubble_primary.left {
+background-color: #b2e221;
+}
+.bubble.bubble_primary.left:before {
+border-right-color: #b2e281;
+border-right-width: 4px;
+left: -10px;
+}
+.bubble_cont {
+word-wrap: break-word;
+word-break: break-all;
+min-height: 25px;
+}
+.bubble {
+max-width: 500px;
+min-height: 1em;
+/* display: inline-block; */
+vertical-align: top;
+position: relative;
+text-align: left;
+font-size: 14px;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+margin: 0 10px;
+}
+.bubble_cont .plain {
+padding: 9px 13px;
+}
+pre {
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+white-space: pre-wrap;
+word-break: initial;
+}
+</style>
+</head>
+<body>
+<div class="bubble js_message_bubble ng-scope bubble_primary right">
+<div class="bubble_cont ng-scope" >
+<div class="plain">
+<pre class="js_message_plain ng-binding" >好久不见了，最近好吗？</pre>
+</div>
+</div>
+</div>
+
+<div class="bubble js_message_bubble ng-scope bubble_primary left">
+<div class="bubble_cont ng-scope" >
+<div class="plain">
+<pre class="js_message_plain ng-binding" >还好，你那边怎么样？</pre>
+</div>
+</div>
+</div>
+</body>
+</html>
